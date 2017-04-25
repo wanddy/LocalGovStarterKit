@@ -395,7 +395,9 @@
     <Content Include="Scripts\jquery-1.12.4.js" />
     <Content Include="Scripts\jquery-1.12.4.min.js" />
     <Content Include="Scripts\lgsk.googlemaps.js" />
-    <Content Include="umbraco\Config\Create\UI.xml" />
+    <Content Include="umbraco\Config\Create\UI.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="umbraco\Config\Lang\cs.xml" />
     <Content Include="umbraco\Config\Lang\da.xml" />
     <Content Include="umbraco\Config\Lang\de.xml" />
