@@ -27,10 +27,10 @@
     <key alias="unpublish">取消发布</key>
     <key alias="refreshNode">重新加载节点</key>
     <key alias="republish">重新发布整站</key>
+    <key alias="restore" version="7.3.0">恢复</key>
     <key alias="SetPermissionsForThePage">为 %0%设置权限</key>
     <key alias="chooseWhereToMove">选择移动目的地</key>
     <key alias="toInTheTreeStructureBelow">到下列的树结构中</key>
-    <key alias="restore" version="7.3.0">恢复</key>
     <key alias="rights">权限</key>
     <key alias="rollback">回滚</key>
     <key alias="sendtopublish">提交至发布者</key>
@@ -39,37 +39,39 @@
     <key alias="toPublish">提交至发布者</key>
     <key alias="translate">翻译</key>
     <key alias="update">更新</key>
-    <key alias="defaultValue">默认值</key>  </area>
+    <key alias="defaultValue">默认值</key>
+  </area>
   <area alias="assignDomain">
     <key alias="permissionDenied">禁止访问</key>
     <key alias="addNew">添加域名</key>
     <key alias="remove">移除</key>
     <key alias="invalidNode">错误的节点</key>
+    <key alias="invalidDomain">域名错误</key> 
     <key alias="duplicateDomain">域名重复</key>
-    <key alias="domain">域名</key>
     <key alias="language">语言</key>
+    <key alias="domain">域名</key>
     <key alias="domainCreated">新域名 '%0%' 已创建</key>
     <key alias="domainDeleted">域名 '%0%' 已删除</key>
     <key alias="domainExists">域名 '%0%' 已使用</key>
-    <key alias="domainHelp">
-    <![CDATA[例如：example.com、www.example.com、example.com:8080、<br/>
-        https://www.example.com/、example.com/en、……使用 * 代表任意域名，<br/>
-        只需要设置语言部分即可。]]>
-        </key>
     <key alias="domainUpdated">域名 '%0%' 已更新</key>
-    <key alias="invalidDomain">域名错误</key> 
     <key alias="orEdit">编辑当前域名</key>
+    <key alias="domainHelp"><![CDATA[例如：example.com、www.example.com、example.com:8080、<br/>
+        https://www.example.com/、example.com/en、……使用 * 代表任意域名，<br/>
+        只需要设置语言部分即可。]]></key>
     <key alias="inherit">继承</key>
     <key alias="setLanguage">语言</key>
-    <key alias="setLanguageHelp">
-      <![CDATA[为当前节点及子节点设置语言，<br /> 也可以从父节点继承。]]>
-    </key>
+    <key alias="setLanguageHelp"><![CDATA[为当前节点及子节点设置语言，<br /> 
+       也可以从父节点继承。]]></key>
     <key alias="setDomains">域名</key>
   </area>
   <area alias="auditTrails">
     <key alias="atViewingFor">查看</key>
   </area>
   <area alias="buttons">
+    <key alias="clearSelection">清除选择</key>
+    <key alias="select">选择</key>
+    <key alias="selectCurrentFolder">选择当前目录</key>
+    <key alias="somethingElse">其它功能</key>
     <key alias="bold">粗体</key>
     <key alias="deindent">取消段落缩进</key>
     <key alias="formFieldInsert">插入表单字段</key>
@@ -87,14 +89,17 @@
     <key alias="macroInsert">插入宏</key>
     <key alias="pictureInsert">插入图片</key>
     <key alias="relations">编辑关联</key>
+    <key alias="returnToList">返回列表</key>
     <key alias="save">保存</key>
     <key alias="saveAndPublish">保存并发布</key>
     <key alias="saveToPublish">保存并提交审核</key>
+    <key alias="saveListView">保存列表视图</key>
     <key alias="showPage">预览</key>
     <key alias="showPageDisabled">因未设置模板无法预览</key>
     <key alias="styleChoose">选择样式</key>
     <key alias="styleShow">显示样式</key>
     <key alias="tableInsert">插入表格</key>
+    <key alias="generateModels">生成模型</key>
   </area>
   <area alias="changeDocType">
     <key alias="changeDocTypeInstruction">要更改所选节点的文档类型，先在列表中选择合适的文档类型。</key>
@@ -117,21 +122,27 @@
     <key alias="validDocTypesNote">仅显示可作为替代的文档类型。</key>    
   </area> 
   <area alias="content">
+    <key alias="isPublished" version="7.2">已发布</key>
     <key alias="about">关于本页</key>
     <key alias="alias">别名</key>
     <key alias="alternativeTextHelp">（图片的替代文本）</key>
     <key alias="alternativeUrls">替代链接</key>
     <key alias="clickToEdit">点击编辑</key>
     <key alias="createBy">创建者</key>
+    <key alias="createByDesc" version="7.0">原作者</key>
+    <key alias="updatedBy" version="7.0">更新者</key>
     <key alias="createDate">创建时间</key>
+    <key alias="createDateDesc" version="7.0">创建此文档的日期/时间</key>
     <key alias="documentType">文档类型</key>
     <key alias="editing">编辑</key>
     <key alias="expireDate">过期于</key>
     <key alias="itemChanged">该项发布之后有更改</key>
     <key alias="itemNotPublished">该项没有发布</key>
     <key alias="lastPublished">最近发布</key>
-    <key alias="mediaLinks">媒体链接地址</key>
+    <key alias="noItemsToShow">没有要显示的项目</key>
+    <key alias="listViewNoItems" version="7.1.5">列表中没有要显示的项目。</key>
     <key alias="mediatype">媒体类型</key>
+    <key alias="mediaLinks">媒体链接地址</key>
     <key alias="membergroup">会员组</key>
     <key alias="memberrole">角色</key>
     <key alias="membertype">会员类型</key>
@@ -140,6 +151,8 @@
     <key alias="otherElements">属性</key>
     <key alias="parentNotPublished">该文档不可见，因为其上级 '%0%' 未发布。</key>
     <key alias="parentNotPublishedAnomaly">该文档已发布，但是没有更新至缓存（内部错误）</key>
+    <key alias="getUrlException">Could not get the url</key>
+    <key alias="routeError">This document is published but its url would collide with content %0%</key>
     <key alias="publish">发布</key>
     <key alias="publishStatus">发布状态</key>
     <key alias="releaseDate">发布于</key>
@@ -149,18 +162,41 @@
     <key alias="sortHelp">拖拽项目或单击列头即可排序，可以按住Shift多选。</key>
     <key alias="statistics">统计</key>
     <key alias="titleOptional">标题（可选）</key>
+    <key alias="altTextOptional">Alternative text (optional)</key>
     <key alias="type">类型</key>
     <key alias="unPublish">取消发布</key>
     <key alias="updateDate">最近编辑</key>
+    <key alias="updateDateDesc" version="7.0">编辑此文档的日期/时间</key>
     <key alias="uploadClear">移除文件</key>
     <key alias="urls">链接到文档</key>
     <key alias="memberof">会员组成员</key>
     <key alias="notmemberof">非会员组成员</key>
+    <key alias="childItems" version="7.0">子项</key>
+    <key alias="target" version="7.0">目标</key>
+    <key alias="scheduledPublishServerTime">这将转换到服务器上的以下时间:</key>
+    <key alias="scheduledPublishDocumentation"><![CDATA[<a href="https://our.umbraco.org/documentation/Getting-Started/Data/Scheduled-Publishing/#timezones" target="_blank">这是什么意思？</a>]]></key>
+  </area>
+  <area alias="media">
+    <key alias="clickToUpload">点击上传</key>
+    <key alias="dropFilesHere">将文件放在此处..</key>
+	  <key alias="urls">链接到媒体</key>
+    <key alias="orClickHereToUpload">或单击此处选择文件</key>
+    <key alias="onlyAllowedFiles">仅允许的文件类型为</key>
+    <key alias="maxFileSize">最大文件大小为</key>
+  </area>
+  <area alias="member">
+    <key alias="createNewMember">创建新成员</key>
+    <key alias="allMembers">所有成员</key>
   </area>
   <area alias="create">
     <key alias="chooseNode">您想在哪里创建 %0%</key>
     <key alias="createUnder">创建在</key>
     <key alias="updateData">选择类型和标题</key>
+    <key alias="noDocumentTypes" version="7.0"><![CDATA[没有允许的文档类型可用。必须在 <strong> "文档类型" </strong> 下的 "设置" 部分中启用这些内容。]]></key>
+    <key alias="noMediaTypes" version="7.0"><![CDATA[没有允许的媒体类型可用。必须在 <strong> "媒体类型" </strong> 下的 "设置" 部分中启用这些内容。]]></key>
+    <key alias="documentTypeWithoutTemplate">没有模板的文档类型</key>
+    <key alias="newFolder">新建文件夹</key>
+    <key alias="newDataType">新数据类型</key>
   </area>
   <area alias="dashboard">
     <key alias="browser">浏览您的网站</key>
@@ -172,38 +208,38 @@
     <key alias="welcome">欢迎</key>
   </area>
   <area alias="prompt">
-    <key alias="stay">Stay</key>
-    <key alias="discardChanges">Discard changes</key>
-    <key alias="unsavedChanges">You have unsaved changes</key>
-    <key alias="unsavedChangesWarning">Are you sure you want to navigate away from this page? - you have unsaved changes</key>
+    <key alias="stay">保持</key>
+    <key alias="discardChanges">丢弃更改</key>
+    <key alias="unsavedChanges">您有未保存的更改</key>
+    <key alias="unsavedChangesWarning">确实要离开此页吗？-您有未保存的更改</key>
   </area>
     <area alias="bulk">
-    <key alias="done">Done</key>
+    <key alias="done">完成</key>
     
-    <key alias="deletedItem">Deleted %0% item</key>
-    <key alias="deletedItems">Deleted %0% items</key>
-    <key alias="deletedItemOfItem">Deleted %0% out of %1% item</key>
-    <key alias="deletedItemOfItems">Deleted %0% out of %1% items</key>
+    <key alias="deletedItem">已删除 %0% 项</key>
+    <key alias="deletedItems">已删除 %0% 项</key>
+    <key alias="deletedItemOfItem">已删除 %0% 项，共 %1% 项</key>
+    <key alias="deletedItemOfItems">已删除 %0% 项，共 %1% 项</key>
 
-    <key alias="publishedItem">Published %0% item</key>
-    <key alias="publishedItems">Published %0% items</key>
-    <key alias="publishedItemOfItem">Published %0% out of %1% item</key>
-    <key alias="publishedItemOfItems">Published %0% out of %1% items</key>
+    <key alias="publishedItem">已发布 %0% 项</key>
+    <key alias="publishedItems">已发布 %0% 项</key>
+    <key alias="publishedItemOfItem">已发布 %0% 项，共 %1% 项</key>
+    <key alias="publishedItemOfItems">已发布 %0% 项，共 %1% 项</key>
 
-    <key alias="unpublishedItem">Unpublished %0% item</key>
-    <key alias="unpublishedItems">Unpublished %0% items</key>
-    <key alias="unpublishedItemOfItem">Unpublished %0% out of %1% item</key>
-    <key alias="unpublishedItemOfItems">Unpublished %0% out of %1% items</key>
+    <key alias="unpublishedItem">已取消发布 %0% 项</key>
+    <key alias="unpublishedItems">已取消发布 %0% 项</key>
+    <key alias="unpublishedItemOfItem">已取消发布 %0% 项，共 %1% 项</key>
+    <key alias="unpublishedItemOfItems">已取消发布 %0% 项，共 %1% 项</key>
 
-    <key alias="movedItem">Moved %0% item</key>
-    <key alias="movedItems">Moved %0% items</key>
-    <key alias="movedItemOfItem">Moved %0% out of %1% item</key>
-    <key alias="movedItemOfItems">Moved %0% out of %1% items</key>
+    <key alias="movedItem">已移动 %0% 项</key>
+    <key alias="movedItems">已移动 %0% 项</key>
+    <key alias="movedItemOfItem">已移动 %0% 项，共 %1% 项</key>
+    <key alias="movedItemOfItems">已移动 %0% 项，共 %1% 项</key>
 
-    <key alias="copiedItem">Copied %0% item</key>
-    <key alias="copiedItems">Copied %0% items</key>
-    <key alias="copiedItemOfItem">Copied %0% out of %1% item</key>
-    <key alias="copiedItemOfItems">Copied %0% out of %1% items</key>
+    <key alias="copiedItem">已复制 %0% 项</key>
+    <key alias="copiedItems">已复制 %0% 项</key>
+    <key alias="copiedItemOfItem">已复制 %0% 项，共 %1% 项</key>
+    <key alias="copiedItemOfItems">已复制 %0% 项，共 %1% 项</key>
   </area>
   <area alias="defaultdialogs">
     <key alias="anchorInsert">锚点名称</key>
@@ -245,24 +281,81 @@
     <key alias="siterepublishHelp">网站缓存将会刷新，所有已发布的内容将会更新。</key>
     <key alias="tableColumns">表格列数</key>
     <key alias="tableRows">表格行数</key>
-    <key alias="templateContentAreaHelp"><![CDATA[<strong>设置一个占位符id</strong> 您可以在子模板中通过该ID来插入内容，引用格式： <code>&lt;asp:content /&gt;</code>。]]></key>
-    <key alias="templateContentPlaceHolderHelp"><![CDATA[从下面的列表中<strong>选择一个占位符id</strong>。]]></key>
+    <key alias="templateContentAreaHelp"><![CDATA[<strong>设置一个占位符id</strong> 您可以在子模板中通过该ID来插入内容，
+       引用格式： <code>&lt;asp:content /&gt;</code>。]]></key>
+    <key alias="templateContentPlaceHolderHelp"><![CDATA[从下面的列表中<strong>选择一个
+      占位符id</strong>。]]></key>
     <key alias="thumbnailimageclickfororiginal">点击图片查看完整大小</key>
     <key alias="treepicker">拾取项</key>
     <key alias="viewCacheItem">查看缓存项</key>
+    <key alias="createFolder">Create folder...</key>
+    <key alias="relateToOriginalLabel">Relate to original</key>
+    <key alias="includeDescendants">Include descendants</key>
+    <key alias="theFriendliestCommunity">The friendliest community</key>
+    <key alias="linkToPage">Link to page</key>
+    <key alias="openInNewWindow">Opens the linked document in a new window or tab</key>
+    <key alias="linkToMedia">Link to media</key>
+    <key alias="selectMedia">Select media</key>
+    <key alias="selectIcon">Select icon</key>
+    <key alias="selectItem">Select item</key>
+    <key alias="selectLink">Select link</key>
+    <key alias="selectMacro">Select macro</key>
+    <key alias="selectContent">Select content</key>
+    <key alias="selectMember">Select member</key>
+    <key alias="selectMemberGroup">Select member group</key>
+    <key alias="noIconsFound">No icons were found</key>
+    <key alias="noMacroParams">There are no parameters for this macro</key>
+    <key alias="externalLoginProviders">External login providers</key>
+    <key alias="exceptionDetail">Exception Details</key>
+    <key alias="stacktrace">Stacktrace</key>
+    <key alias="innerException">Inner Exception</key>
+    <key alias="linkYour">Link your</key>
+    <key alias="unLinkYour">Un-Link your</key>
+    <key alias="account">account</key>
+    <key alias="selectEditor">Select editor</key>
   </area>
   <area alias="dictionaryItem">
-    <key alias="description"><![CDATA[为字典项编辑不同语言的版本‘<em>%0%</em>’<br/>您可以在左侧的“语言”中添加一种语言]]></key>
+    <key alias="description"><![CDATA[
+       为字典项编辑不同语言的版本‘<em>%0%</em>’<br/>您可以在左侧的“语言”中添加一种语言
+    ]]></key>
     <key alias="displayName">语言名称</key>
+    <key alias="changeKey">Edit the key of the dictionary item.</key>
+    <key alias="changeKeyError">
+      <![CDATA[
+      The key '%0%' already exists.
+   ]]>
+    </key>
+  </area>
+  <area alias="placeholders">
+    <key alias="username">Enter your username</key>
+    <key alias="password">Enter your password</key>
+    <key alias="confirmPassword">Confirm your password</key>
+    <key alias="nameentity">Name the %0%...</key>
+    <key alias="entername">Enter a name...</key>
+    <key alias="label">Label...</key>
+    <key alias="enterDescription">Enter a description...</key>
+    <key alias="search">Type to search...</key>
+    <key alias="filter">Type to filter...</key>
+    <key alias="enterTags">Type to add tags (press enter after each tag)...</key>
+    <key alias="email">Enter your email</key>
   </area>
   <area alias="editcontenttype">
+    <key alias="allowAtRoot" version="7.2">Allow at root</key>
+    <key alias="allowAtRootDesc" version="7.2">Only Content Types with this checked can be created at the root level of Content and Media trees</key>
     <key alias="allowedchildnodetypes">允许子项节点类型</key>
+    <key alias="contenttypecompositions">Document Type Compositions</key>
     <key alias="create">创建</key>
     <key alias="deletetab">删除选项卡</key>
     <key alias="description">描述</key>
     <key alias="newtab">新建选项卡</key>
     <key alias="tab">选项卡</key>
     <key alias="thumbnail">缩略图</key>
+    <key alias="hasListView">Enable list view</key>
+    <key alias="hasListViewDesc" version="7.2">Configures the content item to show a sortable &amp; searchable list of its children, the children will not be shown in the tree</key>
+    <key alias="currentListView" version="7.2">Current list view</key>
+    <key alias="currentListViewDesc" version="7.2">The active list view data type</key>
+    <key alias="createListView" version="7.2">Create custom list view</key>
+    <key alias="removeListView" version="7.2">Remove custom list view</key>
   </area>
   <area alias="editdatatype">
     <key alias="addPrevalue">添加预设值</key>
@@ -291,6 +384,7 @@
     <key alias="errorRegExpWithoutTab">%0% 格式不正确</key>
   </area>
   <area alias="errors">
+    <key alias="receivedErrorFromServer">Received an error from the server</key>
     <key alias="dissallowedMediaType">该文件类型已被管理员禁用</key>
     <key alias="codemirroriewarning">注意，尽管配置中允许CodeMirror，但是它在IE上不够稳定，所以无法在IE运行。</key>
     <key alias="contentTypeAliasAndNameNotNull">请为新的属性类型填写名称和别名！</key>
