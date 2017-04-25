@@ -1,16 +1,19 @@
 ﻿
 body {
-    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Microsoft YaHei",微软雅黑,'Roboto', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12pt;
     background-color: #fefefe;
 }
-
+div{
+	word-wrap: break-word;
+	
+}
 a { text-decoration: none; }
 
 .btn a { text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Ubuntu', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Ubuntu', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,"Microsoft YaHei",微软雅黑;
     font-weight: 700;
     /* color: #BF360C; */
 }

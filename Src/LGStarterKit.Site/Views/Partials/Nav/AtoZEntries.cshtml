@@ -8,7 +8,8 @@
         
         <h2>@letter</h2>
 
-        var entries = Umbraco.GetAtoZEntries(letter);
+        //var entries = Umbraco.GetAtoZEntries(letter);
+        var entries = Umbraco.GetAtoZEntries(letter, new string[] { }, (IPublishedContent)Model.Content.AncestorOrSelf(1));
 
         if (entries.Any())
         {

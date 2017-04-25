@@ -5,6 +5,9 @@
 @using Umbraco.Core.Logging
 @using Umbraco.Web.Models
 @using Newtonsoft.Json;
+@using Lucene.Net.Analysis;
+@using Lucene.Net.Analysis.Standard;
+@using System.IO;
 
 @inherits Umbraco.Web.Macros.PartialViewMacroPage
 @{
@@ -302,10 +305,23 @@
     // Splits a string on space, except where enclosed in quotes
     public IEnumerable<string> Tokenize(string input)
     {
-        return Regex.Matches(input, @"[\""].+?[\""]|[^ ]+")
-            .Cast<Match>()
-            .Select(m => m.Value.Trim('\"'))
-            .ToList();
+        Analyzer analyzer = new StandardAnalyzer();
+        TokenStream tokenStream = analyzer.TokenStream("", new StringReader(input));
+        Token token = null;
+        var ret = new List<string>();
+        while ((token = tokenStream.Next()) != null)
+        {
+            if (token.TermText() != "ÊÇ" && token.TermText() != "µÄ")
+            {
+                ret.Add(token.TermText());
+
+            }
+        }
+        return ret;
+        //return Regex.Matches(input, @"[\""].+?[\""]|[^ ]+")
+        //    .Cast<Match>()
+        //    .Select(m => m.Value.Trim('\"'))
+        //    .ToList();
     }
 
     // Highlights all occurances of the search terms in a body of text

@@ -127,11 +127,50 @@ namespace LGStarterKit.AtoZ
             SortedDictionary<string, AtoZInfo> atoz = GetAtoZPages(umbraco, exludedTypes, root);
 
             var sorted = new SortedDictionary<string, AtoZInfo> ();
-            var entries = atoz.Where(x => x.Key.ToLower().StartsWith(letter.ToLower()));
+            var entries = atoz.Where(x => GetPYChar(x.Key.Substring(0, 1)) == letter.ToLower());
             entries.ForEach(x => sorted.Add(x.Key, x.Value));
 
             return sorted;
             
+        }
+        /// <summary>
+        /// 取单个字符的拼音声母
+        /// </summary>
+        /// <param name="c">要转换的单个汉字</param>
+        /// <returns>拼音声母</returns>
+        private static string GetPYChar(string c)
+        {
+            if (Convert.ToInt32(Convert.ToChar(c.Substring(0, 1))) < Convert.ToInt32(Convert.ToChar(128))) return c.ToLower();
+            byte[] array = new byte[2];
+            array = System.Text.Encoding.Default.GetBytes(c);
+            int i = (short)(array[0] - '\0') * 256 + ((short)(array[1] - '\0'));
+
+            if (i < 0xB0A1) return c.ToLower();
+            if (i < 0xB0C5) return "a";
+            if (i < 0xB2C1) return "b";
+            if (i < 0xB4EE) return "c";
+            if (i < 0xB6EA) return "d";
+            if (i < 0xB7A2) return "e";
+            if (i < 0xB8C1) return "f";
+            if (i < 0xB9FE) return "g";
+            if (i < 0xBBF7) return "h";
+            if (i < 0xBFA6) return "j";
+            if (i < 0xC0AC) return "k";
+            if (i < 0xC2E8) return "l";
+            if (i < 0xC4C3) return "m";
+            if (i < 0xC5B6) return "n";
+            if (i < 0xC5BE) return "o";
+            if (i < 0xC6DA) return "p";
+            if (i < 0xC8BB) return "q";
+            if (i < 0xC8F6) return "r";
+            if (i < 0xCBFA) return "s";
+            if (i < 0xCDDA) return "t";
+            if (i < 0xCEF4) return "w";
+            if (i < 0xD1B9) return "x";
+            if (i < 0xD4D1) return "y";
+            if (i < 0xD7FA) return "z";
+
+            return c.ToLower();
         }
     }
 

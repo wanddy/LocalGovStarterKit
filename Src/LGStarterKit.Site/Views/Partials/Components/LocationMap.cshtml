@@ -5,7 +5,7 @@
 
 @if (Model.Content.HasValue("location"))
 {
-    Html.RequiresJs("//www.google.com/jsapi");
+    Html.RequiresJs("https://www.google.com/jsapi");
     Html.RequiresJs("/scripts/lgsk.googlemaps.js");
 
     var map = Model.Content.GetPropertyValue<AngularGoogleMaps.Model>("location");
