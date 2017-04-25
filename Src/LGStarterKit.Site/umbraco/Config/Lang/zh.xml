@@ -24,8 +24,13 @@
     <key alias="notify">提醒</key>
     <key alias="protect">公众访问权限</key>
     <key alias="publish">发布</key>
+    <key alias="unpublish">取消发布</key>
     <key alias="refreshNode">重新加载节点</key>
     <key alias="republish">重新发布整站</key>
+    <key alias="SetPermissionsForThePage">为 %0%设置权限</key>
+    <key alias="chooseWhereToMove">选择移动目的地</key>
+    <key alias="toInTheTreeStructureBelow">到下列的树结构中</key>
+    <key alias="restore" version="7.3.0">恢复</key>
     <key alias="rights">权限</key>
     <key alias="rollback">回滚</key>
     <key alias="sendtopublish">提交至发布者</key>
@@ -33,9 +38,8 @@
     <key alias="sort">排序</key>
     <key alias="toPublish">提交至发布者</key>
     <key alias="translate">翻译</key>
-    <key alias="unpublish">取消发布</key>
     <key alias="update">更新</key>
-  </area>
+    <key alias="defaultValue">默认值</key>  </area>
   <area alias="assignDomain">
     <key alias="permissionDenied">禁止访问</key>
     <key alias="addNew">添加域名</key>
@@ -943,6 +947,7 @@
     <key alias="memberRoles">角色</key>
     <key alias="memberTypes">会员类型</key>
     <key alias="documentTypes">文档类型</key>
+    <key alias="relationTypes">关系类型</key>
     <key alias="packager">扩展包</key>
     <key alias="packages">扩展包</key>
     <key alias="python">Python文件</key>
@@ -954,6 +959,7 @@
     <key alias="stylesheets">样式表</key>
     <key alias="templates">模板</key>
     <key alias="xslt">XSLT文件</key>
+    <key alias="analytics">分析</key>
   </area>
   <area alias="update">
     <key alias="updateAvailable">有可用更新</key>
@@ -965,8 +971,9 @@
     <key alias="administrators">管理员</key>
     <key alias="categoryField">分类字段</key>
     <key alias="changePassword">更改密码</key>
-    <key alias="changePasswordDescription">要改变密码，请在框中输入新密码，然后单击“更改密码”。</key>
+    <key alias="newPassword">更改密码</key>
     <key alias="confirmNewPassword">确认新密码</key>
+    <key alias="changePasswordDescription">要改变密码，请在框中输入新密码，然后单击“更改密码”。</key>
     <key alias="contentChannel">内容频道</key>
     <key alias="descriptionField">描述字段</key>
     <key alias="disabled">禁用用户</key>
@@ -977,16 +984,16 @@
     <key alias="loginname">登录</key>
     <key alias="mediastartnode">默认打开媒体项</key>
     <key alias="modules">区域</key>
-    <key alias="newPassword">更改密码</key>
     <key alias="noConsole">禁用后台管理界面</key>
+    <key alias="oldPassword">旧密码</key>
     <key alias="password">密码</key>
     <key alias="resetPassword">重设密码</key>
     <key alias="passwordChanged">您的密码已更改！</key>
     <key alias="passwordConfirm">重输密码</key>
-    <key alias="passwordCurrent">当前密码</key>
     <key alias="passwordEnterNew">输入新密码</key>
-    <key alias="passwordInvalid">密码错误</key>
     <key alias="passwordIsBlank">新密码不能为空！</key>
+    <key alias="passwordCurrent">当前密码</key>
+    <key alias="passwordInvalid">密码错误</key>
     <key alias="passwordIsDifferent">新密码和重输入的密码不一致，请重试！</key>
     <key alias="passwordMismatch">重输的密码和原密码不一致！</key>
     <key alias="permissionReplaceChildren">替换子项权限设置</key>
@@ -999,5 +1006,10 @@
     <key alias="usertype">用户类型</key>
     <key alias="userTypes">用户类型</key>
     <key alias="writer">撰稿人</key>
+    <key alias="translator">翻译人</key>
+    <key alias="change">更改</key>
+    <key alias="yourProfile" version="7.0">你的资料</key>
+    <key alias="yourHistory" version="7.0">你最近的历史信息</key>
+    <key alias="sessionExpires" version="7.0">会话过期于</key>
   </area>
 </language>
