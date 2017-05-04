@@ -14,7 +14,7 @@ namespace Jumoo.StarterKit.Installer
 {
     public class ContentImporter
     {
-        const string importPath = "~/app_data/lgsk/";
+        const string importPath = "~/app_plugins/lgsk/";
 
         public int ImportContent(string fileName)
         {

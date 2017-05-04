@@ -18,7 +18,7 @@ namespace LGStarterKit.Dashboard
     [PluginController("lgsk")]
     public class lgskImporter
     {
-        const string importPath = "~/app_data/lgsk/";
+        const string importPath = "~/app_plugins/lgsk/";
 
         [HttpGet]
         public IEnumerable<ImportStructure> GetImports()

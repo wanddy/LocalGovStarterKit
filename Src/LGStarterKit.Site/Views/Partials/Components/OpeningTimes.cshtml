@@ -41,9 +41,9 @@
                     <h4 itemprop="name">@item.GetPropertyValue("title", item.Name)</h4>
                 }
 
-                @if (item.HasProperty("openingTimes"))
+                @if (item.HasProperty("openTimes"))
                 {
-                    var openingInfo = item.GetPropertyValue<Jumoo.OpeningSoon.OpeningSoonModel>("openingTimes");
+                    var openingInfo = item.GetPropertyValue<Jumoo.OpeningSoon.OpeningSoonModel>("openTimes");
                     <table class="table">
                         @foreach (var time in openingInfo)
                         {
