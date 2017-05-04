@@ -5,7 +5,7 @@
     var pageSize = 10;
     var page = 1;int.TryParse(Request.QueryString["page"], out page);
 
-    var selection = Model.Content.Descendants()
+    var items = Model.Content.Descendants()
         .Where(x => x.IsVisible() && !x.HasProperty("isComponent"))
         .OrderByDescending(x => x.GetPropertyValue<DateTime>("endDate", x.CreateDate));
     var totalPages = (int)Math.Ceiling((double)items.Count() / (double)pageSize);
@@ -20,11 +20,11 @@
 
 }
 
-@if (selection.Any())
+@if (items.Any())
 {
 
     <div class="item-listing">
-        @foreach(var item in selection)
+        @foreach(var item in items)
         {
             @DisplayItem(item)
         }

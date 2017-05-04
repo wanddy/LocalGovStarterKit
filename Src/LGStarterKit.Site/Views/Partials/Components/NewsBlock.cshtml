@@ -6,8 +6,8 @@
         return;
     }
 
-    var listRoot =
-        Umbraco.TypedContent( Model.Content.GetPropertyValue<int>("newsRoot"));
+    var listRoot = (IPublishedContent)Model.Content.GetPropertyValue("newsRoot");
+        //Umbraco.TypedContent( Model.Content.GetPropertyValue<int>("newsRoot"));
 
 
     if (listRoot == null)
