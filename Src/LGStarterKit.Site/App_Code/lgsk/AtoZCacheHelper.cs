@@ -142,7 +142,10 @@ namespace LGStarterKit.AtoZ
         {
             if (Convert.ToInt32(Convert.ToChar(c.Substring(0, 1))) < Convert.ToInt32(Convert.ToChar(128))) return c.ToLower();
             byte[] array = new byte[2];
-            array = System.Text.Encoding.Default.GetBytes(c);
+            //if (System.Text.Encoding.Default.CodePage != 936)
+                array = System.Text.Encoding.GetEncoding(936).GetBytes(c);//只支持中文
+            //else
+            //array = System.Text.Encoding.Default.GetBytes(c);
             int i = (short)(array[0] - '\0') * 256 + ((short)(array[1] - '\0'));
 
             if (i < 0xB0A1) return c.ToLower();
